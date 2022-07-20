@@ -21,25 +21,25 @@ spec:
             - name: DB_HOST   # Setting Database host address from configMap
               valueFrom :
                 configMapKeyRef :
-                  name : MYSQL-configmap
+                  name : mysql-configmap
                   key :  host
 
             - name: DB_NAME  # Setting Database name from configMap
               valueFrom :
                 configMapKeyRef :
-                  name : MYSQL-configmap
+                  name : mysql-configmap
                   key :  dbName
 
             - name: DB_USERNAME  # Setting Database username from Secret
               valueFrom :
                 secretKeyRef :
-                  name : MYSQL-secrets
+                  name : mysql-secrets
                   key :  username
 
             - name: DB_PASSWORD # Setting Database password from Secret
               valueFrom :
                 secretKeyRef :
-                  name : MYSQL-secrets
+                  name : mysql-secrets
                   key :  password
 
 ---
