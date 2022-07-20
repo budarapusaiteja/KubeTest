@@ -1,7 +1,9 @@
 package com.sample.sampledata;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 @Entity
+@Table(name= "university", schema = "test")
 public class University {
 	@Id
 	private Integer id;

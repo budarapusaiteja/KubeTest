@@ -1,0 +1,7 @@
+apiVersion : v1
+kind : ConfigMap
+metadata:
+  name : MYSQL-configmap
+data:
+  host : mysql
+  dbName: javatechie
